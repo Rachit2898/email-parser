@@ -31,10 +31,6 @@ try {
   console.error("DB connection error:", err);
 }
 
-const PORT = 8000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
 
 // ---------------- Email Listener Setup ----------------
 
