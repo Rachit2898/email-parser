@@ -1,9 +1,8 @@
 // db.js
 import mongoose from "mongoose";
-import dotenv from "dotenv";
-dotenv.config();
+import config from "../config.json" assert { type: "json" };
 
-const dbURI = process.env.MONGODB_URI;
+const dbURI =config.MONGODB_URI;
 
 export async function connectDB() {
   try {

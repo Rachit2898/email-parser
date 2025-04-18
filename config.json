@@ -1,6 +1,8 @@
 {
     "baseUrl": "http://127.0.0.1:8000/",
     "clientId": "67fd0d9f5410bedf2d7fba05-m9h42hsa",
-    "clientSecret": "6a47cb41-e9ee-40ba-99a4-e3ebd63d6d9b"
+    "clientSecret": "6a47cb41-e9ee-40ba-99a4-e3ebd63d6d9b",
+    "MONGODB_URI":"mongodb+srv://merachitt2898:177k8dBr2gnKTqgc@cluster0.buyr7.mongodb.net/",
+    "PORT":"3000"
   }
   

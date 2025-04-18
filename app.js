@@ -4,6 +4,7 @@ import { upsertContact } from "./controllers/ghl.js";
 import { validate } from "./util.js";
 import { MailListener } from "mail-listener5";
 
+import config from "./config.json" assert { type: "json" };
 const app = express();
 app.use(express.json());
 
@@ -11,8 +12,8 @@ app.use("/",(req,res)=>{
   res.status(200).json({success:"true"})
 })
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+app.listen(config.PORT, () => {
+  console.log(`Server is running on port ${config.PORT}`);
 });
 // Handle uncaught exceptions (sync)
 process.on("uncaughtException", (err) => {
